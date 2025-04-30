@@ -9,7 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'standalone'
+  output: 'standalone',
+  experimental: {
+    outputFileTracingRoot: process.cwd(),
+  }
 }
 
 export default nextConfig
