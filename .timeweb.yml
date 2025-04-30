@@ -1,10 +1,5 @@
-name: rossel66web
-type: nodejs
-nodejs_version: 18
-build:
-  commands:
-    - npm install
-    - npm run build
-start:
-  command: npm start
-  port: 3000
+framework: next
+nodeVersion: 18
+buildCommand: npm run build
+startCommand: node server.js
+buildDir: .next/standalone
